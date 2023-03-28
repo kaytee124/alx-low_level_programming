@@ -16,11 +16,11 @@ int main(void)
 		{
 			if (num < count && num != count)
 			{
-				putchar((num/10)+ '0');
-				putchar((num%10)+ '0');
+				putchar((num / 10) + '0');
+				putchar((num % 10) + '0');
 				putchar(' ');
-				putchar((count/10)+ '0');
-				putchar((count%10)+ '0');
+				putchar((count / 10) + '0');
+				putchar((count % 10) + '0');
 				if (num == 98 && count == 99)
 				{
 					break;
