@@ -9,8 +9,6 @@ int main(void)
 {
 	int num;
 	int count;
-	int third;
-	int fourth;
 
 	for (num = 0; num  < 100; num++)
 	{

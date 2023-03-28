@@ -13,7 +13,7 @@ int main(void)
 	while (count < 10)
 	{
 		putchar(num);
-		if(num == 57)
+		if (num == 57)
 		{
 			break;
 		}

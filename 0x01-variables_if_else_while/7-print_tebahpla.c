@@ -9,10 +9,10 @@ int main(void)
 {
 	int counter = 'z';
 
-	while (counter <= 'a')
+	while (counter >=  'a')
 	{
 		putchar(counter);
-		counter++;
+		counter--;
 	}
 	putchar('\n');
 
