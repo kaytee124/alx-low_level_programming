@@ -26,7 +26,7 @@ void print_times_table(int n)
 						printf(",");
 						printf("   ");
 					}
-					else if (a < n && result > 10 && result < 100)
+					else if (a < n && result >= 10 && result < 100)
 					{
 						printf(",");
 						printf("  ");
