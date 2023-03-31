@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * natural - "prints the sum of all multiples of 3 or 5 under 1024"
+ * main - "prints the sum of all multiples of 3 or 5 under 1024"
  *
  * Return:void
  */
-void natural(void)
+int main(void)
 {
 	int i, sum = 0;
 
