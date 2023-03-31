@@ -21,17 +21,17 @@ void print_times_table(int n)
 				printf("%d", result);
 				if (result != (n * n))
 				{
-					if (a < n && result < 10 && (i * (a + 1) !>= 10 ))
+					if (a < n && result < 10 && (i * (a + 1)) !>= 10 )
 					{
 						printf(",");
 						printf("   ");
 					}
-					else if (a < n && result >= 10 && result < 100 && (i * (a + 1) !>= 100) || a < n && result < 10 && (i * (a + 1) >= 10 ))
+					else if (a < n && result >= 10 && result < 100 && (i * (a + 1)) !>= 100 || a < n && result < 10 && (i * (a + 1)) >= 10 )
 					{
 						printf(",");
 						printf("  ");
 					}
-					else if (a < n && result >= 100 || a < n && result >= 10 && result < 100 && (i * (a + 1) >= 100))
+					else if (a < n && result >= 100 || a < n && result >= 10 && result < 100 && (i * (a + 1)) >= 100)
 					{
 						printf(",");
 						printf(" ");
