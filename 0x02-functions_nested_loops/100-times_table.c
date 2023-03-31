@@ -19,7 +19,7 @@ void print_times_table(int n)
 			{
 				result = i * a;
 				printf("%d", result);
-				if (n < (n * n))
+				if ( a < n)
 				{
 					printf(",");
 					printf(" ");
