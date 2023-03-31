@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int i == 0;
+	int i = 0;
 	long j = 1, k = 2;
 
 	while (i < 50)
@@ -26,7 +26,7 @@ int main(void)
 			k += j;
 			j = k - j;
 			printf(", %ld", k);
-			i++
+			i++;
 		}
 	}
 	printf("\n");
