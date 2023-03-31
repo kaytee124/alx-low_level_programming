@@ -9,9 +9,9 @@
 int main(void)
 {
 	int i = 0;
-	long j = 1, k = 2;
+	long j = 1, k = 2, next;
 
-	while (i < 50)
+	while (i <= 50)
 	{
 		if (i == 0)
 		{
@@ -23,8 +23,9 @@ int main(void)
 		}
 		else
 		{
-			k += j;
-			j = k - j;
+			next = k + j;
+			j = k;
+			k = next;
 			printf(", %ld", k);
 			i++;
 		}
