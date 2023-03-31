@@ -27,8 +27,8 @@ int main(void)
 			j = k;
 			k = next;
 			printf(", %ld", k);
-			i++;
 		}
+		i++;
 	}
 	printf("\n");
 	return (0);
