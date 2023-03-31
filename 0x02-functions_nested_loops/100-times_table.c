@@ -13,32 +13,29 @@ void print_times_table(int n)
 
 	if (n < 0 || n > 15)
 	{
-		break;
-	}
-
-	for (i = 0; i <= n; i++)
-	{
-		for (a = 0; a <= n; a++)
+		for (i = 0; i <= n; i++)
 		{
-			result = i * a;
-			printf("%d", result);
-
-			if (result != (n * n))
+			for (a = 0; a <= n; a++)
 			{
-				if (a < n && result < 10)
+				result = i * a;
+				printf("%d", result);
+				if (result != (n * n))
 				{
-					printf(",");
-					printf("   ");
-				}
-				else if (a < n && result > 10 && result < 100)
-				{
-					printf(",");
-					printf("  ");
-				}
-				else if (a < n && result >= 100)
-				{
-					printf(",");
-					printf(" ");
+					if (a < n && result < 10)
+					{
+						printf(",");
+						printf("   ");
+					}
+					else if (a < n && result > 10 && result < 100)
+					{
+						printf(",");
+						printf("  ");
+					}
+					else if (a < n && result >= 100)
+					{
+						printf(",");
+						printf(" ");
+					}
 				}
 			}
 			printf("\n");
