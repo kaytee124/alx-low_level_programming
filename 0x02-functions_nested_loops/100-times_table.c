@@ -22,28 +22,27 @@ void print_times_table(int n)
 		{
 			result = i * a;
 			printf("%d", result);
-			if (result == (n * n))
-			{
-				break;
-			}
 
-			if (a < n && result < 10)
+			if (result != (n * n))
 			{
-				printf(",");
-				printf("   ");
+				if (a < n && result < 10)
+				{
+					printf(",");
+					printf("   ");
+				}
+				else if (a < n && result > 10 && result < 100)
+				{
+					printf(",");
+					printf("  ");
+				}
+				else if (a < n && result >= 100)
+				{
+					printf(",");
+					printf(" ");
+				}
 			}
-			else if (a < n && result > 10 && result < 100)
-			{
-				printf(",");
-				printf("  ");
-			}
-			else if (a < n && result >= 100)
-			{
-				printf(",");
-				printf(" ");
-			}
+			printf("\n");
 		}
-		printf("\n");
 	}
 }
 
