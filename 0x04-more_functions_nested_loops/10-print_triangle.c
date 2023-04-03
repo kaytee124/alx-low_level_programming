@@ -11,7 +11,7 @@ void print_triangle(int size)
 	int i, h;
 	int count;
 	int reminder = size;
-	
+
 	if (size > 0)
 	{
 		for (count = 0; count < size; count++)
