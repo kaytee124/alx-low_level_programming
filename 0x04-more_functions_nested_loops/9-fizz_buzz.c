@@ -11,7 +11,17 @@ int main(void)
 
 	for (count = 0; count <= 100; count++)
 	{
-		if (count % 3 == 0 && count % 5 != 0)
+		if (count == 1)
+		{
+			printf("%d", count);
+			printf(" ");
+		}
+		else if (count == 2)
+		{
+			printf("%d", count);
+			printf(" ");
+		}
+		else if (count % 3 == 0 && count % 5 != 0)
 		{
 			printf("Fizz");
 			printf(" ");
