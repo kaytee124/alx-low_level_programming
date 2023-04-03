@@ -11,18 +11,25 @@ void print_triangle(int size)
 	int i, h;
 	int count;
 	int reminder = size;
-
-	for (count = 0; count < size; count++)
+	
+	if (size > 0)
 	{
-		for (i = 0; i < reminder; i++)
+		for (count = 0; count < size; count++)
 		{
-			_putchar(' ');
+			for (i = 0; i < reminder; i++)
+			{
+				_putchar(' ');
+			}
+			for (h = 0; h <= count; h++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+			reminder--;
 		}
-		for (h = 0; h <= count; h++)
-		{
-			_putchar('#');
-		}
+	}
+	else
+	{
 		_putchar('\n');
-		reminder--;
 	}
 }

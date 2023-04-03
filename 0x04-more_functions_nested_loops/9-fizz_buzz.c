@@ -14,32 +14,22 @@ int main(void)
 		if (count == 1)
 		{
 			printf("%d", count);
-			printf(" ");
-		}
-		else if (count == 2)
-		{
-			printf("%d", count);
-			printf(" ");
 		}
 		else if (count % 3 == 0 && count % 5 != 0)
 		{
-			printf("Fizz");
-			printf(" ");
+			printf(" Fizz");
 		}
 		else if (count % 5 == 0 && count % 3 != 0)
 		{
-			printf("Buzz");
-			printf(" ");
+			printf(" Buzz");
 		}
 		else if (count % 3 == 0 && count % 5 == 0)
 		{
-			printf("FizzBuzz");
-			printf(" ");
+			printf(" FizzBuzz");
 		}
 		else
 		{
-			printf("%d", count);
-			printf(" ");
+			printf(" %d", count);
 		}
 	}
 	printf("\n");
