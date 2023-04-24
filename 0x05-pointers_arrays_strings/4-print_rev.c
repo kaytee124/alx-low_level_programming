@@ -6,22 +6,21 @@
  */
 void print_rev(char *s)
 {
-        int reversecount;
-        int count;
+	int reversecount;
+	int count;
 
-        for (reversecount = 0; *s != '\0'; reversecount++)
-        {
-                s++;
-        }
-        s--;
-        count = reversecount;
+	for (reversecount = 0; *s != '\0'; reversecount++)
+	{
+		s++;
+	}
+	s--;
+	count = reversecount;
 
-        while (count > 0)
-        {
-                _putchar(*s);
-                s--;
-                count--;
-        }
-
-        _putchar('\n');
+	while (count > 0)
+	{
+		_putchar(*s);
+		s--;
+		count--;
+	}
+	_putchar('\n');
 }
